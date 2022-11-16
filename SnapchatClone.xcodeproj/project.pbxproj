@@ -14,6 +14,11 @@
 		DD80236B2923CFE50045C71B /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD80236A2923CFE50045C71B /* SettingsVC.swift */; };
 		DD8284572922BF690078C1F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD8284562922BF690078C1F0 /* GoogleService-Info.plist */; };
 		DD95536A2923F41E00DD5DB7 /* SnapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9553692923F41E00DD5DB7 /* SnapVC.swift */; };
+		DD99305B292503FB00B95CFB /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD99305A292503FB00B95CFB /* FeedCell.swift */; };
+		DDCA23A0292511E600A584F3 /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCA239F292511E600A584F3 /* Snap.swift */; };
+		DDCA23A329251E6F00A584F3 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = DDCA23A229251E6F00A584F3 /* SDWebImage */; };
+		DDCA23A62925250A00A584F3 /* ImageSlideshow in Frameworks */ = {isa = PBXBuildFile; productRef = DDCA23A52925250A00A584F3 /* ImageSlideshow */; };
+		DDCA23A82925250A00A584F3 /* ImageSlideshow/Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DDCA23A72925250A00A584F3 /* ImageSlideshow/Kingfisher */; };
 		DDF25ACE2922BE7600D5239D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF25ACD2922BE7600D5239D /* AppDelegate.swift */; };
 		DDF25AD02922BE7600D5239D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF25ACF2922BE7600D5239D /* SceneDelegate.swift */; };
 		DDF25AD22922BE7600D5239D /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF25AD12922BE7600D5239D /* SignInVC.swift */; };
@@ -32,6 +37,8 @@
 		DD80236A2923CFE50045C71B /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		DD8284562922BF690078C1F0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DD9553692923F41E00DD5DB7 /* SnapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapVC.swift; sourceTree = "<group>"; };
+		DD99305A292503FB00B95CFB /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		DDCA239F292511E600A584F3 /* Snap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
 		DDF25ACA2922BE7600D5239D /* SnapchatClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapchatClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDF25ACD2922BE7600D5239D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDF25ACF2922BE7600D5239D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,7 +54,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDCA23A62925250A00A584F3 /* ImageSlideshow in Frameworks */,
+				DDCA23A329251E6F00A584F3 /* SDWebImage in Frameworks */,
 				6038DDEB37D452E4F81F3F01 /* Pods_SnapchatClone.framework in Frameworks */,
+				DDCA23A82925250A00A584F3 /* ImageSlideshow/Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				DD108322292422F10091366B /* UserSingleton.swift */,
+				DDCA239F292511E600A584F3 /* Snap.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -78,6 +89,7 @@
 				DD8023682923CFCB0045C71B /* UploadVC.swift */,
 				DD80236A2923CFE50045C71B /* SettingsVC.swift */,
 				DD9553692923F41E00DD5DB7 /* SnapVC.swift */,
+				DD99305A292503FB00B95CFB /* FeedCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -151,6 +163,11 @@
 			dependencies = (
 			);
 			name = SnapchatClone;
+			packageProductDependencies = (
+				DDCA23A229251E6F00A584F3 /* SDWebImage */,
+				DDCA23A52925250A00A584F3 /* ImageSlideshow */,
+				DDCA23A72925250A00A584F3 /* ImageSlideshow/Kingfisher */,
+			);
 			productName = SnapchatClone;
 			productReference = DDF25ACA2922BE7600D5239D /* SnapchatClone.app */;
 			productType = "com.apple.product-type.application";
@@ -179,6 +196,10 @@
 				Base,
 			);
 			mainGroup = DDF25AC12922BE7600D5239D;
+			packageReferences = (
+				DDCA23A129251E6F00A584F3 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				DDCA23A42925250A00A584F3 /* XCRemoteSwiftPackageReference "ImageSlideshow" */,
+			);
 			productRefGroup = DDF25ACB2922BE7600D5239D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -250,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD108323292422F10091366B /* UserSingleton.swift in Sources */,
+				DDCA23A0292511E600A584F3 /* Snap.swift in Sources */,
 				DD8023672923CFBE0045C71B /* FeedVC.swift in Sources */,
 				DDF25AD22922BE7600D5239D /* SignInVC.swift in Sources */,
 				DDF25ACE2922BE7600D5239D /* AppDelegate.swift in Sources */,
@@ -257,6 +279,7 @@
 				DD95536A2923F41E00DD5DB7 /* SnapVC.swift in Sources */,
 				DDF25AD02922BE7600D5239D /* SceneDelegate.swift in Sources */,
 				DD80236B2923CFE50045C71B /* SettingsVC.swift in Sources */,
+				DD99305B292503FB00B95CFB /* FeedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +497,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DDCA23A129251E6F00A584F3 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		DDCA23A42925250A00A584F3 /* XCRemoteSwiftPackageReference "ImageSlideshow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/zvonicek/ImageSlideshow";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DDCA23A229251E6F00A584F3 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDCA23A129251E6F00A584F3 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		DDCA23A52925250A00A584F3 /* ImageSlideshow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDCA23A42925250A00A584F3 /* XCRemoteSwiftPackageReference "ImageSlideshow" */;
+			productName = ImageSlideshow;
+		};
+		DDCA23A72925250A00A584F3 /* ImageSlideshow/Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDCA23A42925250A00A584F3 /* XCRemoteSwiftPackageReference "ImageSlideshow" */;
+			productName = ImageSlideshow/Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DDF25AC22922BE7600D5239D /* Project object */;
 }
